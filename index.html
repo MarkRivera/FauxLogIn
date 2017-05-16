@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In Here</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- BootStrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- End BootStrap CDN -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<main class="container">
+	<header class="page-head">
+	<h1 class="row justify-content-center">Log In | Native NYer
+		<br>
+	</h1>
+	<h2 class="row justify-content-center">
+		<small class="text-muted">For the New Yorkers at heart</small>
+	</h2>
+	</header>
+	<article class="entire-form-box">
+		<section class="row justify-content-center">
+			<form class="col-sm-6" id="border-box">
+				<div class="form-group">
+					<label for="email-address">Email</label>
+					<input type="email" name="your-email" aria-describedby="emailHelp" placeholder="Enter email" id="email-address" class="form-control" required="">
+					<div class="form-control-feedback" id="email-success">Great! Thanks and welcome back!</div>
+					<div class="form-control-feedback" id="email-fail">Hmm... Doesn't seem quite right, check the address you've entered and try again!</div>
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label for="password-field">Password: </label>
+					<input type="password" id="password-field" class="form-control" placeholder="Password">
+					<div class="form-control-feedback" id="pass-success">All systems go, ready to launch!</div>
+					<div class="form-control-feedback" id="pass-fail">Be sure that what you've entered is more than 3 characters.</div>
+					<small id="password-hint" class="form-text text-muted">Please enter your password.</small>
+				</div>
+				<div class="form-group row justify-content-center">
+					<div class="form-check form-inline">
+		    		<label class="form-check-label col-8">
+		      		<input type="checkbox" class="form-check-input">
+		      		Remember Me?
+				    </label>
+				    <button type="button" class="btn btn-primary col-4" data-toggle="modal" data-target="#myModal">
+  					Log In
+						</button>
+					</div>
+				</div>
+			</form>
+		</section>
+		<section class="row justify-content-center">
+			<div class="col-6">
+				<hr>
+			</div>
+		</section>
+		<section class="row justify-content-center">
+			<div class="col-xs-4">
+				<p><a href="#">Forgot your password?</a></p>
+			</div>
+			<div class="col-sm-4"></div>
+			<div class="col-xs-4">
+				<p><a href="#"><u>Register</u></a></p>
+			</div>
+		</section>
+
+		<!-- Modal for Page -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      		<div class="modal-header">
+        		<h5 class="modal-title" id="exampleModalLabel">Hey There!</h5>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          	<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<div class="modal-body">
+        		<p>Normally, hitting log in would sent your information to the server and either log you in or inform you that something went wrong. However since this is only a faux log in page and there is no server, this is what you get for trying to log in! Have a nice day :).</p>
+
+        		<p>
+        		I used simple client side validation to hint at users so that I could ease any frustrations they have while attempting to log in.
+        		</p>
+      		</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">I understand</button>
+      		</div>
+    		</div>
+  		</div>
+		</div>
+	</article>
+</main>
+
+</body>
+<!-- BootStrap JS -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!-- End BootStrap JS -->
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>
